@@ -96,6 +96,10 @@ f41_44 : GLCM analyzes texture information by calculating four statistical chara
 - Balance
 - Equilibrium
 
+```python
+python WuFeatures img_path csv_path
+```
+
 ### 2. Datta features [2]
 
 available features : f1, f3, f4, f5-7, f10-21, f22, f23 (20 features)
@@ -129,6 +133,9 @@ f53~55 :
 f56 :
 
 
+```python
+python DattaFeatures img_path csv_path
+```
 
 ## Reference
 
