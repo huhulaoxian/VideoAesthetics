@@ -250,5 +250,9 @@ def main():
 
     return feature_vec
 
+    with open(csv_path, 'a') as f:
+        wr = csv.writer(f)
+        wr.writerow(feature_vec)
+    print(len(feature_vec))
 if __name__ == "__main__":
     main()

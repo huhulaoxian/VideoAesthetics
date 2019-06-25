@@ -70,12 +70,12 @@ def f10_21(channels):
 
 
 # Image Size feature
-def f22():
+def f22(img):
     return img.shape[0] + img.shape[1]
 
 
 # Aspect Ratio Feature
-def f23():
+def f23(img):
     return img.shape[0] / img.shape[1]
 
 
