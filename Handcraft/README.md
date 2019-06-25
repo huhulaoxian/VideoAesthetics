@@ -6,6 +6,21 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 
 # 1. HandCraft feature on image 
 
+# Available features
+## Total 47 features on images
+
+- Exposure of Light (f1)
+- Saturation and Hue (f2_3)
+- The Rule of Thirds (f4_6)
+- Size and Aspect Ratio (f7_8)
+- The effects of saturation and brightness on emotion (e.g., pleasure, arousal and dominance) (f9_11)
+- Colorfulness (f12)
+- W3C colors (f13_28)
+- Tamura features (f29_31)
+- Wavelet-based features (f32_43)
+- Gray-Level Co-occurance Matrix (f44_47)
+
+
 ## Color-based features
 color has been found effective in evokeing emotions and is linked to users' perception and responses toward a product. In addition, Color has been shown to influence perceived trustworthiness, users' loyalty, and purchase intetion.[3]
 
