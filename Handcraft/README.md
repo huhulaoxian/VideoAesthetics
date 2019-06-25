@@ -20,7 +20,9 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Wavelet-based features (f32_43)
 - Gray-Level Co-occurance Matrix (f44_47)
 
-.. code-block:: python
+```python
+python FeatureExtraction img_path csv_path
+```
 
 
 ## Color-based features
