@@ -36,7 +36,7 @@ f1_3 : Pleasure = 0.69y + 0.22s, Arousal : -0.31y + 0.60s, Dominance : -0.76y + 
 :
 
 - colorfulness[3] (1) <br>
-* f4 : In their paper, Hasler and Süsstrunk first asked 20 non-expert participants to rate images on a 1-7 scale of colorfulness. This survey was conducted on a set of 84 images. The scale values were:
+f4 : In their paper, Hasler and Süsstrunk first asked 20 non-expert participants to rate images on a 1-7 scale of colorfulness. This survey was conducted on a set of 84 images. The scale values were:
 
 
 1. Not colorful
