@@ -35,7 +35,7 @@ f1_3 : Pleasure = 0.69y + 0.22s, Arousal : -0.31y + 0.60s, Dominance : -0.76y + 
 - color semantic histogram <br>
 :
 
-- colorfulness[3] (1) <br>
+- Colorfulness[3] (1) <br>
 f4 : In their paper, Hasler and Süsstrunk first asked 20 non-expert participants to rate images on a 1-7 scale of colorfulness. This survey was conducted on a set of 84 images. The scale values were:
 
 
@@ -53,7 +53,7 @@ Through a series of experimental calculations, they derived a simple metric that
 
 They found through these experiments that a simple opponent color space representation along with the mean and standard deviations of these values correlates to 95.3% of the survey data.
 
-- dominant colors (5, imperfect) <br>
+- Dominant colors (5, imperfect) <br>
 f5-9 : Dominant colors are measure by extracting top N (=5) occurring colors using uniform color quantification.
 
 - W3C colors (16) <br>
