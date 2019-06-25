@@ -82,7 +82,6 @@ available features : f1, f3, f4, f5-7, f10-21, f22, f23 (20 features)
 
 - Exposure of Light and Colorfulness (1) <br>
 f1(Exposure of Light): Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs.
-
 f2 (Colorfulness):
 
 - Saturation and Hue (2) <br>
