@@ -20,6 +20,8 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Wavelet-based features (f32_43)
 - Gray-Level Co-occurance Matrix (f44_47)
 
+.. code-block:: python
+
 
 ## Color-based features
 color has been found effective in evokeing emotions and is linked to users' perception and responses toward a product. In addition, Color has been shown to influence perceived trustworthiness, users' loyalty, and purchase intetion.[3]
