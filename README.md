@@ -6,4 +6,10 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 
 # 1. HandCraft feature on image 
 
+
+[1] Wu, Z., Kim, T., Li, Q., & Ma, X. (2019). Understanding and Modeling User-Perceived Brand Personality from Mobile Application UIs.
+
+[2] Datta, R., Joshi, D., Li, J., & Wang, J. Z. (2006, May). Studying aesthetics in photographic images using a computational approach. In European conference on computer vision (pp. 288-301). Springer, Berlin, Heidelberg.
+
+
 # 2. DeepLearning feature on image
