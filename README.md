@@ -64,11 +64,11 @@ f10_25 : W3C colors measure the occurrence of the 16 basic nameable colors prese
 - Tamura features (3) <br>
 f26_28 : Tamura texture features describe the coarseness, contrast and directionality of image, which are related to human psychological responses to visual perceptions.
 
-f29_40 : Wavelet-based features (12) <br>
-: One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture. Wavelet-based features allow a multi-scale partitioning across three color channels.
+- Wavelet-based features (12) <br>
+f29_40 : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture. Wavelet-based features allow a multi-scale partitioning across three color channels.
 
-f41_44 : Gray-Level Co-occurance Matrix (4) <br>
-: GLCM analyzes texture information by calculating four statistical characteristics:contrast, correlation, energy, homogeneity
+- Gray-Level Co-occurance Matrix (4) <br>
+f41_44 : GLCM analyzes texture information by calculating four statistical characteristics:contrast, correlation, energy, homogeneity
 
 #### Organization-based features
 
