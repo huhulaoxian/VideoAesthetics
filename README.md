@@ -81,8 +81,8 @@ f41_44 : GLCM analyzes texture information by calculating four statistical chara
 available features : f1, f3, f4, f5-7, f10-21, f22, f23 (20 features)
 
 - Exposure of Light and Colorfulness (1) <br>
-f1(Exposure of Light): Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs.
-f2 (Colorfulness):
+f1(Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs. <br>
+f2 (Colorfulness) :
 
 - Saturation and Hue (2) <br>
 f3,4 (the average saturation and Hue) : Saturation indicates chromatic purity. Pure colors in a photo tend to be more appealing that dull or impurse ones. In natural out-door landscape photography, professionals use specialized film such as the Fuji Velvia to enhance the staturation to result in depper blue sky, greener grass, more vivid flowers.
@@ -91,22 +91,22 @@ f3,4 (the average saturation and Hue) : Saturation indicates chromatic purity. P
 f5,6,7 (Rule of Thirds): A very popular rule of thumnb in photography is the Rule of Thirds. The rule can be considered as a sloppy approximantion to the 'golden ratio' (about 0.618). It specifies that the main element, or the center of interest, in a photograph should lie at one of the four intersection. e.g., the eye of a man, were often placed alighned to one of the edges, on the inside. This implies that a large part of the main object often lies on the periphery or inside of the inner rectangle.
 
 - Familiarity Measure <br>
-f8,9 (Familiarity Measure):
+f8,9 (Familiarity Measure) :
 
 - Wavelet-based Texture (12) <br>
-f10~21 (Wavelet-based feuatres): One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture.
+f10~21 (Wavelet-based feuatres) : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture.
 
 - Size and Aspect Ratio <br>
-f22~23: The size of an image has a good chance of affecting the photo ratings. It is well-known that 4:3 and 16:9 aspect ratios, which approximante the 'golden ratio' are chosen as standards for television screens.
+f22~23 : The size of an image has a good chance of affecting the photo ratings. It is well-known that 4:3 and 16:9 aspect ratios, which approximante the 'golden ratio' are chosen as standards for television screens.
 
 - Region Composition <br>
-f24~52: 
+f24~52 : 
 
 - Low Depth of Field Indicators <br>
-f53~55: 
+f53~55 : 
 
 - Shpae Convexity <br>
-f56:
+f56 :
 
 
 
