@@ -4,6 +4,7 @@ Aesthetics in photography is how people usually characterize beauty in theis for
 
 High-level judgments, i.e., users' perception, of design have been shown to be correlated to low-level features of the appearance. Prior works suggest that the aesthetic and affective responses aroused by the visual appearnace of a design influence users' perception and experience. [1]
 
+# 1. HandCraft feature on image 
 
 ## Color-based features
 color has been found effective in evokeing emotions and is linked to users' perception and responses toward a product. In addition, Color has been shown to influence perceived trustworthiness, users' loyalty, and purchase intetion.[3]
