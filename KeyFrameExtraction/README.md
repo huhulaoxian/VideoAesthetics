@@ -1,15 +1,22 @@
-# ImageAesthetics
-
-Aesthetics in photography is how people usually characterize beauty in this form of art.
-
-High-level judgments, i.e., users' perception, of design have been shown to be correlated to low-level features of the appearance. Prior works suggest that the aesthetic and affective responses aroused by the visual appearnace of a design influence users' perception and experience.
-
-# 1. HandCraft feature on image 
+# Video key frame extraction
 
 
-[1] Wu, Z., Kim, T., Li, Q., & Ma, X. (2019). Understanding and Modeling User-Perceived Brand Personality from Mobile Application UIs.
+# 1. Key frame extraction using difference of RGB color histrogram
 
-[2] Datta, R., Joshi, D., Li, J., & Wang, J. Z. (2006, May). Studying aesthetics in photographic images using a computational approach. In European conference on computer vision (pp. 288-301). Springer, Berlin, Heidelberg.
+```python
+python RGBdetection.py <video path> <file path for extracted frame> <Paremeter to frame you want from video>
+```
 
+# 2. Key frame extraction using difference of RGB values
 
-# 2. DeepLearning feature on image
+```python
+python RGBdetection_colorhist.py <video path> <file path for extracted frame> <Paremeter to frame you want from video>
+```
+
+# 3. Key frame extraction using difference of RGB color histogram with Threshold
+
+Sheena, C. V., & Narayanan, N. K. (2015). Key-frame extraction by analysis of histograms of video frames using statistical methods. Procedia Computer Science, 70, 36-40.
+
+```python
+python RGBdetection_colorhist.py <video path> <file path for extracted frame> <option - Paremeter to frame you want from video -- default : none>
+```
