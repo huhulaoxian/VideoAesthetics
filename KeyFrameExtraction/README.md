@@ -23,7 +23,8 @@ python RGBdetection_colorhist.py <video path> <file path for extracted frame> <o
 
 ## Additional information
 1. Difference in LUV space
-: The choice of LUV colorspace is mainly due to how it differentiates illuminance from chromaticity which will not be available in RGB colorspace.
+
+- The choice of LUV colorspace is mainly due to how it differentiates illuminance from chromaticity which will not be available in RGB colorspace.
 Another main reason better explained under this link is as follows:
 
 More specifically 'Luv' was designed to be 'perceptually linear'. That is that a small change in color in one part of the colorspace looks to be about the same, as a similar change in another part of the colorspace. This makes LUV colorspace much better suited for image difference comparisons.
