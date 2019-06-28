@@ -21,6 +21,10 @@ Sheena, C. V., & Narayanan, N. K. (2015). Key-frame extraction by analysis of hi
 python RGBdetection_colorhist.py <video path> <file path for extracted frame> <option - Paremeter to frame you want from video -- default : none>
 ```
 
+## 4. VSUMM
+
+De Avila, S. E. F., Lopes, A. P. B., da Luz Jr, A., & de Albuquerque Araújo, A. (2011). VSUMM: A mechanism designed to produce static video summaries and a novel evaluation method. Pattern Recognition Letters, 32(1), 56-68.
+
 ## Additional information
 1. Difference in LUV space
 
