@@ -7,3 +7,7 @@ Implementações sequencial e paralelas para o método de sumarização automát
 Vsumm: A mechanism designed to produce static video summaries and a novel
 evaluation method. Pattern Recognition Letters, 32(1):56 - 68. Image Processing,
 Computer Vision and Pattern Recognition in Latin America.
+
+
+## Reference
+https://github.com/susilvaalmeida/vsumm
