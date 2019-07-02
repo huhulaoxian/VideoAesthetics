@@ -37,3 +37,8 @@ Another main reason better explained under this link is as follows:
 
 - More specifically 'Luv' was designed to be 'perceptually linear'. That is that a small change in color in one part of the colorspace looks to be about the same, as a similar change in another part of the colorspace. This makes LUV colorspace much better suited for image difference comparisons.
 : https://photo.stackexchange.com/questions/67933/when-to-use-luv-and-not-rgb-colourspaces
+
+
+## Reference
+KeyFrame extraction using histogram - https://github.com/amanwalia92/KeyFramesExtraction
+VSUMM - https://github.com/susilvaalmeida/vsumm
