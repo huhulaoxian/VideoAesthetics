@@ -20,6 +20,8 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 
 [1] Ren, J., Shen, X., Lin, Z., Mech, R., & Foran, D. J. (2017). Personalized image aesthetics. In Proceedings of the IEEE International Conference on Computer Vision (pp. 638-647).
 
+[2] Malu, G., Bapi, R. S., & Indurkhya, B. (2017). Learning photography aesthetics with deep cnns. arXiv preprint arXiv:1707.03981.
+
 ## Key frame extraction
 
 [1] Sheena, C. V., & Narayanan, N. K. (2015). Key-frame extraction by analysis of histograms of video frames using statistical methods. Procedia Computer Science, 70, 36-40.
