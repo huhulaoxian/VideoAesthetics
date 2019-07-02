@@ -40,5 +40,6 @@ Another main reason better explained under this link is as follows:
 
 
 ## Reference
-KeyFrame extraction using histogram - https://github.com/amanwalia92/KeyFramesExtraction
-VSUMM - https://github.com/susilvaalmeida/vsumm
+KeyFrame extraction using histogram : https://github.com/amanwalia92/KeyFramesExtraction
+
+VSUMM : https://github.com/susilvaalmeida/vsumm
