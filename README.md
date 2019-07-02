@@ -23,3 +23,5 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 ## Key frame extraction
 
 [1] Sheena, C. V., & Narayanan, N. K. (2015). Key-frame extraction by analysis of histograms of video frames using statistical methods. Procedia Computer Science, 70, 36-40.
+
+[2] De Avila, S. E. F., Lopes, A. P. B., da Luz Jr, A., & de Albuquerque Araújo, A. (2011). VSUMM: A mechanism designed to produce static video summaries and a novel evaluation method. Pattern Recognition Letters, 32(1), 56-68.
