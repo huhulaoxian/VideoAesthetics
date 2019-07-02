@@ -18,7 +18,7 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 
 ### 2. DeepLearning feature on image
 
-
+[1] Ren, J., Shen, X., Lin, Z., Mech, R., & Foran, D. J. (2017). Personalized image aesthetics. In Proceedings of the IEEE International Conference on Computer Vision (pp. 638-647).
 
 ## Key frame extraction
 
