@@ -30,3 +30,4 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 
 ## Feature aggregation
 
+[1] Jégou, H., Douze, M., Schmid, C., & Pérez, P. (2010, June). Aggregating local descriptors into a compact image representation. In CVPR 2010-23rd IEEE Conference on Computer Vision & Pattern Recognition (pp. 3304-3311). IEEE Computer Society.
