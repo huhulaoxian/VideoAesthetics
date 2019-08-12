@@ -92,7 +92,7 @@ def main():
             writer.writerow(['video_name', 'frame_name'])
 
     error_name = 'error.csv'
-    if not os.path.exists(file_name):
+    if not os.path.exists(error_name):
         with open(error_name, 'w', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=',')
             writer.writerow(['video_name'])
@@ -111,6 +111,7 @@ def main():
             end = time.time()
             elapsed_time = end - start
             print ('elapsed time vsumm with frames in disk:', elapsed_time)
+
         except:
             with open(error_name, 'a', newline='') as csvfile:
                 writer = csv.writer(csvfile, delimiter=',')
