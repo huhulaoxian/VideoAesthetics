@@ -91,6 +91,12 @@ def main():
             writer = csv.writer(csvfile, delimiter=',')
             writer.writerow(['video_name', 'frame_name'])
 
+    error_name = 'error.csv'
+    if not os.path.exists(file_name):
+        with open(error_name, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile, delimiter=',')
+            writer.writerow(['video_name'])
+
     # if not vsumm_frames_in_memory(videofile):
     #     print('cannot keep all frames in memory')
 
@@ -98,12 +104,17 @@ def main():
     video_list = os.listdir(video_file)
 
     for video in video_list:
-        start = time.time()
-        video_path = os.path.join(video_file,video)
-        vsumm_frames_in_disk(video_path,csv_path)
-        end = time.time()
-        elapsed_time = end - start
-        print ('elapsed time vsumm with frames in disk:', elapsed_time)
+        try:
+            start = time.time()
+            video_path = os.path.join(video_file,video)
+            vsumm_frames_in_disk(video_path,csv_path)
+            end = time.time()
+            elapsed_time = end - start
+            print ('elapsed time vsumm with frames in disk:', elapsed_time)
+        except:
+            with open(error_name, 'a', newline='') as csvfile:
+                writer = csv.writer(csvfile, delimiter=',')
+                writer.writerow([video])
 
 if __name__ == '__main__':
     main()
