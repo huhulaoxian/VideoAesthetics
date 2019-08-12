@@ -6,11 +6,17 @@ import cv2
 import os
 import math
 import video_segmentation as vs
-import feature_extraction as feat
-import clusterization as cl
+import yg_feature_extraction as feat
+import yg_clusterization as cl
 import shutil
 import time
 import argparse
+import csv
+
+def bgr2hsv(x):
+    hsv_frame = cv2.cvtColor(x, cv2.COLOR_BGR2HSV)
+    h,s,v = cv2.split(hsv_frame)
+    return h
 
 def vsumm_frames_in_memory(video):
     segmentation = vs.VideoSegmentation(video)
@@ -33,7 +39,7 @@ def vsumm_frames_in_memory(video):
 
     return True
 
-def vsumm_frames_in_disk(video):
+def vsumm_frames_in_disk(video,csv_path):
 #     frames_folder = 'frames-'+video[7:-4]
 #     if not os.path.isdir(frames_folder):
 #         os.mkdir(frames_folder)
@@ -49,17 +55,24 @@ def vsumm_frames_in_disk(video):
     # features = feat.read_frames_extract_features(frames_folder,frames_list)
     # keyframes = cl.find_clusters(features)
 
-#     summary_folder = 'summaryD-'+video[7:-4]
-#     if not os.path.isdir(summary_folder):
-#         os.mkdir(summary_folder)
-    keyframes_value = [frames[k.frame_id] for k in keyframes]
-    for num,keyframe in enumerate(keyframes_value):
-        frame_name = 'opencv'+str(num)+'.jpg'
-        cv2.imwrite(frame_name, keyframe)
-#     for k in keyframes:
-#         kframe = frames_folder+'/frame-'+str(k.frame_id).zfill(6)+'.jpg'
-#         shutil.copy(kframe,summary_folder)
+    video_file = video.split('/')[1]
+    video_name = video_file.split('.')[0]
 
+    summary_folder = 'summary/D-' + video_name
+
+    if not os.path.isdir(summary_folder):
+        os.mkdir(summary_folder)
+
+    keyframes_value = [frames[k.frame_id] for k in keyframes if np.std(bgr2hsv(frames[k.frame_id])) > 0.1]
+
+
+    for num,keyframe in enumerate(keyframes_value):
+        frame_name = summary_folder+'/' + video_name + '_' + str(num)+'.jpg'
+        cv2.imwrite(frame_name, keyframe)
+
+        with open(csv_path, 'a', newline='') as csvfile:
+            spamwriter = csv.writer(csvfile, delimiter=',')
+            spamwriter.writerow([video_file, frame_name])
 
 def main():
     
@@ -68,16 +81,29 @@ def main():
     parser.add_argument('csv_path',type=str, help='input csv_file_path')
     
     args = parser.parse_args()
-    
-    videofile = args.video_file
-    csv_path = args.csv_path
-    start = time.time()  
-    if not vsumm_frames_in_memory(videofile):
-        print('cannot keep all frames in memory')
 
-    vsumm_frames_in_disk(videofile)
-    end = time.time()
-    elapsed_time = end-start
-    print ('elapsed time vsumm with frames in disk:', elapsed_time)
+    video_file = args.video_file
+    csv_path = args.csv_path
+
+    file_name = csv_path
+    if not os.path.exists(file_name):
+        with open(file_name, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile, delimiter=',')
+            writer.writerow(['video_name', 'frame_name'])
+
+    # if not vsumm_frames_in_memory(videofile):
+    #     print('cannot keep all frames in memory')
+
+
+    video_list = os.listdir(video_file)
+
+    for video in video_list:
+        start = time.time()
+        video_path = os.path.join(video_file,video)
+        vsumm_frames_in_disk(video_path,csv_path)
+        end = time.time()
+        elapsed_time = end - start
+        print ('elapsed time vsumm with frames in disk:', elapsed_time)
+
 if __name__ == '__main__':
     main()
