@@ -78,7 +78,37 @@ def f22(img):
 def f23(img):
     return img.shape[0] / img.shape[1]
 
+# Low Depth of Field Indicators 
+def f53_55(channels):
+    DoF_features = []
+    for channel in channels:
+        v1 = v2 = v3 = 0
+        coeffs = pywt.wavedecn(channel, wavelet='db1', level=3)
+        ad,da,dd = coeffs[3]['ad'], coeffs[3]['da'], coeffs[3]['dd']
 
+        sumv1 = np.sum(ad[4:12,4:12])
+        if sumv1 > 0:
+            v1 = np.sum(np.abs(coeffs[3]['ad'][4:12,4:12])) / sumv1
+
+        sumv2 = np.sum(da[4:12,4:12])
+        if sumv2 > 0:
+            v2 = np.sum(np.abs(coeffs[3]['da'][4:12,4:12])) / sumv2
+
+        sumv3 = np.sum(dd[4:12,4:12])
+        if sumv3 > 0:
+            v3 = np.sum(np.abs(coeffs[3]['dd'][4:12,4:12])) / sumv3
+
+        if sumv1 == 0:
+            v1 = (v2 + v3)/2
+        if sumv2 == 0:
+            v2 = (v1 + v3)/2
+        if sumv3 == 0:
+            v3 = (v1 + v2)/2
+            
+        DoF_features.append(v1 + v2 + v3)
+        
+    return DoF_features
+    
 def main():
     global img
     parser = argparse.ArgumentParser(description='Datta features')
@@ -114,6 +144,11 @@ def main():
     feature_vec.append(f22())
     feature_vec.append(f23())
 
+    DoF_features = f53_55(channels)
+    
+    for i in DoF_features:
+        feature_vec.append(i)
+        
     with open(csv_path, 'a') as f:
         wr = csv.writer(f)
         wr.writerow(feature_vec)
