@@ -160,7 +160,7 @@ python DattaFeatures img_path csv_path
 
 ### 3. MachajdikFeatures [4]
 - **Dynamics** <br>
-f51_f56 : Stuies suggest that lines induce emotional effects. Horizontal lines are always associated with a static horizon and communicate calmmess, peacefulness and relaxation, vertical lines are clear and direct and communicate dignity and eternality, slant lines, on the othe hand, are unstable and communicate dynamism.
+f51_f56 : Studies suggest that lines induce emotional effects. Horizontal lines are always associated with a static horizon and communicate calmmess, peacefulness and relaxation, vertical lines are clear and direct and communicate dignity and eternality, slant lines, on the othe hand, are unstable and communicate dynamism.
 
 
 ## Reference
@@ -174,7 +174,5 @@ f51_f56 : Stuies suggest that lines induce emotional effects. Horizontal lines a
 [4] Machajdik, J., & Hanbury, A. (2010, October). Affective image classification using features inspired by psychology and art theory. In Proceedings of the 18th ACM international conference on Multimedia (pp. 83-92). ACM.
 
 ## Reference github
-
-[1] https://github.com/GreenD93/image-aesthetics-learning
 
 [2] https://github.com/MarshalLeeeeee/Tamura-In-Python
