@@ -23,24 +23,24 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Dynamics (f51_f56)
 
 
-#### Color <hr>
+### Color <hr>
 - Exposure of Light (f1)
 - Saturation and Hue (f2_3)
 - The effects of saturation and brightness on emotion (e.g., pleasure, arousal and dominance) (f12_14)
 - Colorfulness (f15)
 - W3C colors (f16_31)
 
-#### Texture <hr>
+### Texture <hr>
 - Tamura features (f32_34)
 - Wavelet-based features (f35_46)
 - Gray-Level Co-occurance Matrix (f47_f50)
 
-#### Composition <hr>
+### Composition <hr>
 - Low Depth of Field Indicators (f9_11)
 - The Rule of Thirds (f4_6)
 - Dynamics (f51_f56)
 
-#### Others <hr>
+### Others <hr>
 - Size and Aspect Ratio (f7_8)
 
 ```python
