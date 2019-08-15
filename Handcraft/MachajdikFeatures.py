@@ -9,7 +9,10 @@ def dynamics(img):
     imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     edges = cv2.Canny(imgray,100,200)
     lines = cv2.HoughLines(edges, 1, np.pi/180,130)
-
+    
+    if lines is None:
+        return [0,0,0,0,0,0]
+    
     for line in lines:
         length, thetha = line[0]
         degree = thetha * 57.2958
