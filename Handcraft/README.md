@@ -44,7 +44,7 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Size and Aspect Ratio (f7_8)
 
 ```python
-python FeatureExtraction img_path csv_path
+python FeatureExtraction img_csv_path save_csv_path
 ```
 
 
