@@ -40,7 +40,7 @@ How visual elements are organized not only affexts the efficiency of human menta
 
 ### 1. Wu features [1]
 
-available features :  
+available features :  f1_3, f12_14, f15, f16_31, f32_34, f35_46, f47_f50
 
 #### Color-based features
 
@@ -104,7 +104,7 @@ python WuFeatures img_path csv_path
 
 ### 2. Datta features [2]
 
-available features : 
+available features : f1, f2_3, f4_6, f7_8, f9_11, f15, f35_46
 
 - **Exposure of Light and Colorfulness** (1) <br>
 f1 (Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs. <br>
@@ -118,7 +118,7 @@ f2_3 (the average saturation and Hue) : Saturation indicates chromatic purity. P
 f4_6 (Rule of Thirds): A very popular rule of thumnb in photography is the Rule of Thirds. The rule can be considered as a sloppy approximantion to the 'golden ratio' (about 0.618). It specifies that the main element, or the center of interest, in a photograph should lie at one of the four intersection. e.g., the eye of a man, were often placed alighned to one of the edges, on the inside. This implies that a large part of the main object often lies on the periphery or inside of the inner rectangle.
 
 - **Familiarity Measure** <br>
-f8,9 (Familiarity Measure) :
+(Familiarity Measure) :
 
 - **Wavelet-based Texture** (12) <br>
 f35_46 (Wavelet-based feuatres) : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture.
