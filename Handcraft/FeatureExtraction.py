@@ -36,6 +36,7 @@ def main():
 
         for img_path in rdr:
             img_path = img_path[0]
+            print(img_path)
             img = cv2.imread(img_path)
     
             # Size and Aspect Ratio
