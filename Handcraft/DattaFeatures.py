@@ -80,7 +80,7 @@ def f23(img):
 
 # Low Depth of Field Indicators 
 def f53_55(channels):
-    DoF_features = []
+    DOF_features = []
     for channel in channels:
         v1 = v2 = v3 = 0
         coeffs = pywt.wavedecn(channel, wavelet='db1', level=3)
@@ -105,9 +105,9 @@ def f53_55(channels):
         if sumv3 == 0:
             v3 = (v1 + v2)/2
             
-        DoF_features.append(v1 + v2 + v3)
+        DOF_features.append(v1 + v2 + v3)
         
-    return DoF_features
+    return DOF_features
     
 def main():
     global img
@@ -144,9 +144,9 @@ def main():
     feature_vec.append(f22())
     feature_vec.append(f23())
 
-    DoF_features = f53_55(channels)
+    DOF_features = f53_55(channels)
     
-    for i in DoF_features:
+    for i in DOF_features:
         feature_vec.append(i)
         
     with open(csv_path, 'a') as f:
