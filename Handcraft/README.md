@@ -127,7 +127,7 @@ f22~23 : The size of an image has a good chance of affecting the photo ratings. 
 f24~52 : 
 
 - **Low Depth of Field Indicators** <br>
-f53~55 : 
+f53~55 : Professional photofraphers often reduce the depth of field (DOF) for shooting single objects by using larger aperture settings, macro lenses, or telephoto lenses. DOF is the range of distance from a camera that is acceptably sharp in the photograph. By reducinf the DOF, the photographer causes the background to blur, thus simplifying the image, reducing the busyness and drawing the attention of the observer to the object of interest, which is sharp.
 
 - **Shpae Convexity** <br>
 f56 :
