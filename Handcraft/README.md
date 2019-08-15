@@ -7,7 +7,7 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 # 1. HandCraft feature on image 
 
 # Available features
-## Total 47 features on images
+## Total 56 features on images
 
 - Exposure of Light (f1)
 - Saturation and Hue (f2_3)
@@ -20,6 +20,7 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Tamura features (f32_34)
 - Wavelet-based features (f35_46)
 - Gray-Level Co-occurance Matrix (f47_f50)
+- Dynamics (f51_f56)
 
 ```python
 python FeatureExtraction img_path csv_path
@@ -39,15 +40,15 @@ How visual elements are organized not only affexts the efficiency of human menta
 
 ### 1. Wu features [1]
 
-available features : f1_3, f4, f10_25, f26_28, f29_40, f41_44 (38 features)
+available features :  
 
 #### Color-based features
 
 - **The effects of saturation and brightness on emotion (e.g., pleasure, arousal and dominance)** (3) <br>
-f1_3 : Pleasure = 0.69y + 0.22s, Arousal : -0.31y + 0.60s, Dominance : -0.76y + 0.32s
+f12_14 : Pleasure = 0.69y + 0.22s, Arousal : -0.31y + 0.60s, Dominance : -0.76y + 0.32s
 
 
-- **HSV statistics** (?) <br>
+- **HSV statistics** <br>
 : HSV color values are alighned with human vision system and are widely used to quantify aesthetic and affective attributes.
 
 - **Itten contrast** <br>
@@ -57,7 +58,7 @@ f1_3 : Pleasure = 0.69y + 0.22s, Arousal : -0.31y + 0.60s, Dominance : -0.76y + 
 :
 
 - **Colorfulness[3]** (1) <br>
-f4 : In their paper, Hasler and Süsstrunk first asked 20 non-expert participants to rate images on a 1-7 scale of colorfulness. This survey was conducted on a set of 84 images. The scale values were:
+f15 : In their paper, Hasler and Süsstrunk first asked 20 non-expert participants to rate images on a 1-7 scale of colorfulness. This survey was conducted on a set of 84 images. The scale values were:
 
 
 1. Not colorful
@@ -75,21 +76,21 @@ Through a series of experimental calculations, they derived a simple metric that
 They found through these experiments that a simple opponent color space representation along with the mean and standard deviations of these values correlates to 95.3% of the survey data.
 
 - **Dominant colors** (5, imperfect) <br>
-f5-9 : Dominant colors are measure by extracting top N (=5) occurring colors using uniform color quantification.
+Dominant colors are measure by extracting top N (=5) occurring colors using uniform color quantification.
 
 - **W3C colors** (16) <br>
-f10_25 : W3C colors measure the occurrence of the 16 basic nameable colors presented on a screen shot. This measure counts the percentage of pixcels close to one of the 16 colors that are semantically recognizable to users
+f16_31 : W3C colors measure the occurrence of the 16 basic nameable colors presented on a screen shot. This measure counts the percentage of pixcels close to one of the 16 colors that are semantically recognizable to users
 
 #### Texture-based features
 
 - **Tamura features** (3) <br>
-f26_28 : Tamura texture features describe the coarseness, contrast and directionality of image, which are related to human psychological responses to visual perceptions.
+f32_34 : Tamura texture features describe the coarseness, contrast and directionality of image, which are related to human psychological responses to visual perceptions.
 
 - **Wavelet-based features** (12) <br>
-f29_40 : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture. Wavelet-based features allow a multi-scale partitioning across three color channels.
+f35_46 : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture. Wavelet-based features allow a multi-scale partitioning across three color channels.
 
 - **Gray-Level Co-occurance Matrix** (4) <br>
-f41_44 : GLCM analyzes texture information by calculating four statistical characteristics:contrast, correlation, energy, homogeneity
+f47_f50 : GLCM analyzes texture information by calculating four statistical characteristics:contrast, correlation, energy, homogeneity
 
 #### Organization-based features
 
@@ -103,35 +104,34 @@ python WuFeatures img_path csv_path
 
 ### 2. Datta features [2]
 
-available features : f1, f3, f4, f5-7, f10-21, f22, f23 (20 features)
+available features : 
 
 - **Exposure of Light and Colorfulness** (1) <br>
-f1(Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs. <br>
-f2 (Colorfulness) :
+f1 (Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs. <br>
+
+f15 (Colorfulness) :
 
 - **Saturation and Hue** (2) <br>
-f3,4 (the average saturation and Hue) : Saturation indicates chromatic purity. Pure colors in a photo tend to be more appealing that dull or impurse ones. In natural out-door landscape photography, professionals use specialized film such as the Fuji Velvia to enhance the staturation to result in depper blue sky, greener grass, more vivid flowers.
+f2_3 (the average saturation and Hue) : Saturation indicates chromatic purity. Pure colors in a photo tend to be more appealing that dull or impurse ones. In natural out-door landscape photography, professionals use specialized film such as the Fuji Velvia to enhance the staturation to result in depper blue sky, greener grass, more vivid flowers.
 
 - **The Rule of Thirds (3)** <br>
-f5,6,7 (Rule of Thirds): A very popular rule of thumnb in photography is the Rule of Thirds. The rule can be considered as a sloppy approximantion to the 'golden ratio' (about 0.618). It specifies that the main element, or the center of interest, in a photograph should lie at one of the four intersection. e.g., the eye of a man, were often placed alighned to one of the edges, on the inside. This implies that a large part of the main object often lies on the periphery or inside of the inner rectangle.
+f4_6 (Rule of Thirds): A very popular rule of thumnb in photography is the Rule of Thirds. The rule can be considered as a sloppy approximantion to the 'golden ratio' (about 0.618). It specifies that the main element, or the center of interest, in a photograph should lie at one of the four intersection. e.g., the eye of a man, were often placed alighned to one of the edges, on the inside. This implies that a large part of the main object often lies on the periphery or inside of the inner rectangle.
 
 - **Familiarity Measure** <br>
 f8,9 (Familiarity Measure) :
 
 - **Wavelet-based Texture** (12) <br>
-f10~21 (Wavelet-based feuatres) : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture.
+f35_46 (Wavelet-based feuatres) : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture.
 
 - **Size and Aspect Ratio** <br>
-f22~23 : The size of an image has a good chance of affecting the photo ratings. It is well-known that 4:3 and 16:9 aspect ratios, which approximante the 'golden ratio' are chosen as standards for television screens.
+f7_8 : The size of an image has a good chance of affecting the photo ratings. It is well-known that 4:3 and 16:9 aspect ratios, which approximante the 'golden ratio' are chosen as standards for television screens.
 
 - **Region Composition** <br>
-f24~52 : 
 
 - **Low Depth of Field Indicators** <br>
-f53~55 : Professional photofraphers often reduce the depth of field (DOF) for shooting single objects by using larger aperture settings, macro lenses, or telephoto lenses. DOF is the range of distance from a camera that is acceptably sharp in the photograph. By reducinf the DOF, the photographer causes the background to blur, thus simplifying the image, reducing the busyness and drawing the attention of the observer to the object of interest, which is sharp.
+f9_11 : Professional photofraphers often reduce the depth of field (DOF) for shooting single objects by using larger aperture settings, macro lenses, or telephoto lenses. DOF is the range of distance from a camera that is acceptably sharp in the photograph. By reducinf the DOF, the photographer causes the background to blur, thus simplifying the image, reducing the busyness and drawing the attention of the observer to the object of interest, which is sharp.
 
 - **Shpae Convexity** <br>
-f56 :
 
 
 ```python
