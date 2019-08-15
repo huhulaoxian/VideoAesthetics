@@ -133,14 +133,14 @@ f9_11 : Professional photofraphers often reduce the depth of field (DOF) for sho
 
 - **Shpae Convexity** <br>
 
+```python
+python DattaFeatures img_path csv_path
+```
+
 ### 3. MachajdikFeatures [4]
 - **Dynamics** <br>
 f51_f56 : Stuies suggest that lines induce emotional effects. Horizontal lines are always associated with a static horizon and communicate calmmess, peacefulness and relaxation, vertical lines are clear and direct and communicate dignity and eternality, slant lines, on the othe hand, are unstable and communicate dynamism.
 
-
-```python
-python DattaFeatures img_path csv_path
-```
 
 ## Reference
 
