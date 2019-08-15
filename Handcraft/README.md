@@ -49,7 +49,7 @@ f12_14 : Pleasure = 0.69y + 0.22s, Arousal : -0.31y + 0.60s, Dominance : -0.76y 
 
 
 - **HSV statistics** <br>
-: HSV color values are alighned with human vision system and are widely used to quantify aesthetic and affective attributes.
+f1_3 : HSV color values are alighned with human vision system and are widely used to quantify aesthetic and affective attributes.
 
 - **Itten contrast** <br>
 : Itten constrast formalizes color contrast in a way of how it induces emotion effect.
