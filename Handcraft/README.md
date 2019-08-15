@@ -133,6 +133,10 @@ f9_11 : Professional photofraphers often reduce the depth of field (DOF) for sho
 
 - **Shpae Convexity** <br>
 
+### 3. MachajdikFeatures [4]
+- **Dynamics** <br>
+f51_f56 : Stuies suggest that lines induce emotional effects. Horizontal lines are always associated with a static horizon and communicate calmmess, peacefulness and relaxation, vertical lines are clear and direct and communicate dignity and eternality, slant lines, on the othe hand, are unstable and communicate dynamism.
+
 
 ```python
 python DattaFeatures img_path csv_path
@@ -145,6 +149,8 @@ python DattaFeatures img_path csv_path
 [2] Datta, R., Joshi, D., Li, J., & Wang, J. Z. (2006, May). Studying aesthetics in photographic images using a computational approach. In European conference on computer vision (pp. 288-301). Springer, Berlin, Heidelberg.
 
 [3] Hasler, D., & Suesstrunk, S. E. (2003, June). Measuring colorfulness in natural images. In Human vision and electronic imaging VIII (Vol. 5007, pp. 87-96). International Society for Optics and Photonics.
+
+[4] Machajdik, J., & Hanbury, A. (2010, October). Affective image classification using features inspired by psychology and art theory. In Proceedings of the 18th ACM international conference on Multimedia (pp. 83-92). ACM.
 
 ## Reference github
 
