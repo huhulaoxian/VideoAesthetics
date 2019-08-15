@@ -22,6 +22,9 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Gray-Level Co-occurance Matrix (f47_f50)
 - Dynamics (f51_f56)
 
+```python
+python FeatureExtraction.py img_csv_path save_csv_path
+```
 
 ### Color(23) <hr>
 - Exposure of Light (f1)
@@ -42,10 +45,6 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 
 ### Others(2) <hr>
 - Size and Aspect Ratio (f7_8)
-
-```python
-python FeatureExtraction.py img_csv_path save_csv_path
-```
 
 
 ## Color-based features
