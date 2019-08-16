@@ -156,7 +156,7 @@ class Texture:
         return Tamura_features
 
     def f29_40(self, img):
-        epsilon = 50
+        epsilon = 0.0001
         feature_values = []
 
         HSV_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -174,7 +174,7 @@ class Texture:
                     numerator = epsilon
 
                 denominator = np.sum(abs(ad)) + np.sum(abs(da)) + np.sum(abs(dd))
-                feature_values.append(numerator / denominator)
+                feature_values.append(numerator+epsilon / denominator+epsilon)
 
         # Sum of the average wavelet coefficients over all three frequency levels of H,S,V property
         feature_values.append(np.sum(feature_values[0:3]))

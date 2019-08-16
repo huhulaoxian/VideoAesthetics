@@ -23,7 +23,8 @@ def main():
      'blue','teal','aqua','coarseness','t_contrast','directionality','wavelet1','wavelet2',
      'wavelet3','wavelet4','wavelet5','wavelet6','wavelet7','wavelet8','wavelet9','wavelet10',
      'wavelet11','wavelet12','g_contrast','correlation','energy','homogeneity','len_statics',
-     'degree_statics','abs_degree_statics','len_dynamics','degree_dynamics','abs_degree_dynamics'
+     'degree_statics','abs_degree_statics','len_dynamics','degree_dynamics','abs_degree_dynamics',
+     'Level_of_detail'
     ]
     
     if not os.path.exists(csv_path):
@@ -107,7 +108,11 @@ def main():
             dynamics = MachajdikFeatures.dynamics(img)
             for i in dynamics:
                 feature_vector.append(i)
-
+            
+            # Level of Details
+            LOD = MachajdikFeatures.LevelOfDetail(img)
+            feature_vector.append(LOD)
+            
             with open(csv_path, 'a') as f:
                 wr = csv.writer(f)
                 wr.writerow(feature_vector)
