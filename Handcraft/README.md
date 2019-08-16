@@ -128,21 +128,20 @@ python WuFeatures img_path csv_path
 
 available features : f1, f2_3, f4_6, f7_8, f9_11, f15, f35_46
 
-- **Exposure of Light and Colorfulness** (1) <br>
-f1 (Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs.
-f15 (Colorfulness) : 
+- **Exposure of Light and Colorfulness(already mentioned above)** (1) <br>
+f1 : (Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs.
 
 - **Saturation and Hue** (2) <br>
-f2_3 (the average saturation and Hue) : Saturation indicates chromatic purity. Pure colors in a photo tend to be more appealing that dull or impurse ones. In natural out-door landscape photography, professionals use specialized film such as the Fuji Velvia to enhance the staturation to result in depper blue sky, greener grass, more vivid flowers.
+f2_3 : (the average saturation and Hue) : Saturation indicates chromatic purity. Pure colors in a photo tend to be more appealing that dull or impurse ones. In natural out-door landscape photography, professionals use specialized film such as the Fuji Velvia to enhance the staturation to result in depper blue sky, greener grass, more vivid flowers.
 
 - **The Rule of Thirds (3)** <br>
-f4_6 (Rule of Thirds): A very popular rule of thumnb in photography is the Rule of Thirds. The rule can be considered as a sloppy approximantion to the 'golden ratio' (about 0.618). It specifies that the main element, or the center of interest, in a photograph should lie at one of the four intersection. e.g., the eye of a man, were often placed alighned to one of the edges, on the inside. This implies that a large part of the main object often lies on the periphery or inside of the inner rectangle.
+f4_6 : (Rule of Thirds): A very popular rule of thumnb in photography is the Rule of Thirds. The rule can be considered as a sloppy approximantion to the 'golden ratio' (about 0.618). It specifies that the main element, or the center of interest, in a photograph should lie at one of the four intersection. e.g., the eye of a man, were often placed alighned to one of the edges, on the inside. This implies that a large part of the main object often lies on the periphery or inside of the inner rectangle.
 
 - **Familiarity Measure** <br>
 (Familiarity Measure) :
 
 - **Wavelet-based Texture** (12) <br>
-f35_46 (Wavelet-based feuatres) : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture.
+f35_46 : (Wavelet-based feuatres) : One way to measure spatial smoothness in the image is to user Daubechies wavelet transform, which has often been used in the literature to characterize texture.
 
 - **Size and Aspect Ratio** <br>
 f7_8 : The size of an image has a good chance of affecting the photo ratings. It is well-known that 4:3 and 16:9 aspect ratios, which approximante the 'golden ratio' are chosen as standards for television screens.
