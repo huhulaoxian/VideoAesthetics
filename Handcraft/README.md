@@ -129,9 +129,8 @@ python WuFeatures img_path csv_path
 available features : f1, f2_3, f4_6, f7_8, f9_11, f15, f35_46
 
 - **Exposure of Light and Colorfulness** (1) <br>
-f1 (Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs. <br>
-
-f15 (Colorfulness) :
+f1 (Exposure of Light) : Too much exposure (leadning to brighter shots) often yields lower quality pictures. Those that are too dark are often also not appealing. Thus light exposure can often be a good discriminant between high and low quality photographs.
+f15 (Colorfulness) : 
 
 - **Saturation and Hue** (2) <br>
 f2_3 (the average saturation and Hue) : Saturation indicates chromatic purity. Pure colors in a photo tend to be more appealing that dull or impurse ones. In natural out-door landscape photography, professionals use specialized film such as the Fuji Velvia to enhance the staturation to result in depper blue sky, greener grass, more vivid flowers.
