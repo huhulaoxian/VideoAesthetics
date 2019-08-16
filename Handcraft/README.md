@@ -21,7 +21,7 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Wavelet-based features (f35_46)
 - Gray-Level Co-occurance Matrix (f47_f50)
 - Dynamics (f51_f56)
-- Level of Details f(57)
+- Level of Details (f57)
 
 ```python
 python FeatureExtraction.py img_csv_path save_csv_path
@@ -40,6 +40,7 @@ python FeatureExtraction.py img_csv_path save_csv_path
 - Gray-Level Co-occurance Matrix (f47_f50)
 
 ### Composition(12) <hr>
+- Level of Details (f57)
 - Low Depth of Field Indicators (f9_11)
 - The Rule of Thirds (f4_6)
 - Dynamics (f51_f56)
@@ -61,7 +62,7 @@ How visual elements are organized not only affexts the efficiency of human menta
 
 ### 1. Wu features [1]
 
-available features :  f1_3, f12_14, f15, f16_31, f32_34, f35_46, f47_f50
+available features :  f1, f2_3, f12_14, f15, f16_31, f32_34, f35_46, f47_f50
 
 #### Color-based features
 
@@ -159,6 +160,9 @@ python DattaFeatures img_path csv_path
 ```
 
 ### 3. MachajdikFeatures [4]
+
+available features : f51_f56, f57
+
 - **Dynamics** <br>
 f51_f56 : Studies suggest that lines induce emotional effects. Horizontal lines are always associated with a static horizon and communicate calmmess, peacefulness and relaxation, vertical lines are clear and direct and communicate dignity and eternality, slant lines, on the othe hand, are unstable and communicate dynamism.
 
