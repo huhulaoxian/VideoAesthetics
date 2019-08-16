@@ -7,7 +7,7 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 # 1. HandCraft feature on image 
 
 # Available features
-## Total 56 features on images
+## Total 57 features on images
 
 - Exposure of Light (f1)
 - Saturation and Hue (f2_3)
@@ -21,6 +21,7 @@ High-level judgments, i.e., users' perception, of design have been shown to be c
 - Wavelet-based features (f35_46)
 - Gray-Level Co-occurance Matrix (f47_f50)
 - Dynamics (f51_f56)
+- Level of Details f(57)
 
 ```python
 python FeatureExtraction.py img_csv_path save_csv_path
@@ -161,6 +162,8 @@ python DattaFeatures img_path csv_path
 - **Dynamics** <br>
 f51_f56 : Studies suggest that lines induce emotional effects. Horizontal lines are always associated with a static horizon and communicate calmmess, peacefulness and relaxation, vertical lines are clear and direct and communicate dignity and eternality, slant lines, on the othe hand, are unstable and communicate dynamism.
 
+- **Level of Details** <br>
+f57 : images with much detail generally produce a different psychological effect than minimalist compositions. 
 
 ## Reference
 
