@@ -39,7 +39,7 @@ python FeatureExtraction.py img_csv_path save_csv_path
 - Wavelet-based features (f35_46)
 - Gray-Level Co-occurance Matrix (f47_f50)
 
-### Composition(12) <hr>
+### Composition(13) <hr>
 - Level of Details (f57)
 - Low Depth of Field Indicators (f9_11)
 - The Rule of Thirds (f4_6)
